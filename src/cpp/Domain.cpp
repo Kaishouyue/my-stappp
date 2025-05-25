@@ -27,7 +27,8 @@ CDomain::CDomain()
 {
 	Title[0] = '0';
 	MODEX = 0;
-
+    DIM = 0;
+	
 	NUMNP = 0;
 	NodeList = nullptr;
 	
@@ -84,6 +85,16 @@ bool CDomain::ReadData(string FileName, string OutFile)
 	Input.getline(Title, 256);
 	Output->OutputHeading();
 
+//	Read the dimension of the problem and element type
+	Input >> DIM ;
+
+	if (DIM != 2 && DIM != 3)
+	{
+		cerr << "*** Error *** Dimension must be 2 or 3 !" << endl;
+		return false;
+	}
+
+
 //	Read the control line
 	Input >> NUMNP >> NUMEG >> NLCASE >> MODEX;
 
@@ -122,7 +133,7 @@ bool CDomain::ReadNodalPoints()
 //	Loop over for all nodal points
 	for (unsigned int np = 0; np < NUMNP; np++)
     {
-		if (!NodeList[np].Read(Input))
+		if (!NodeList[np].Read(Input,DIM))
 			return false;
     
         if (NodeList[np].NodeNumber != np + 1)

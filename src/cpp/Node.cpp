@@ -25,20 +25,35 @@ CNode::CNode(double X, double Y, double Z)
 };
 
 //	Read element data from stream Input
-bool CNode::Read(ifstream& Input)
+bool CNode::Read(ifstream& Input, unsigned int DIM )
 {
 	Input >> NodeNumber;	// node number
+	if (DIM == 2){
+        Input >> bcode[0] >> bcode[1]
+			  >> XYZ[0] >> XYZ[1];
+        XYZ[2] = 0; 
+		bcode[2] = 1;	// 2D problem, z direction is nonactive
+	}
+	if (DIM == 3){
 	Input >> bcode[0] >> bcode[1] >> bcode[2]
 		  >> XYZ[0] >> XYZ[1] >> XYZ[2];
-
+	}
 	return true;
 }
 
 //	Output nodal point data to stream
-void CNode::Write(COutputter& output)
+void CNode::Write(COutputter& output, unsigned int DIM)
 {
+	if (DIM == 2)
+	{
+		output << setw(9) << NodeNumber << setw(5) << bcode[0] << setw(5) << bcode[1] 
+			   << setw(18) << XYZ[0] << setw(15) << XYZ[1]  << endl;
+	}
+	if (DIM == 3)
+	{		
 	output << setw(9) << NodeNumber << setw(5) << bcode[0] << setw(5) << bcode[1] << setw(5) << bcode[2]
 		   << setw(18) << XYZ[0] << setw(15) << XYZ[1] << setw(15) << XYZ[2] << endl;
+    }
 }
 
 //	Output equation numbers of nodal point to stream

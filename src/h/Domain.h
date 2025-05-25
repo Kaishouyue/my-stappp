@@ -42,6 +42,12 @@ private:
 		1 : Execution */
 	unsigned int MODEX;
 
+//！Dimontion of the problem
+/*!		2 : Plane stress/strain problem
+		3 : 3D problem */
+	unsigned int DIM;
+
+
 //!	Total number of nodal points
 	unsigned int NUMNP;
 
@@ -123,6 +129,9 @@ public:
 //!	Return the title of problem
 	inline string GetTitle() { return Title; }
 
+//!	Return the dimension of the problem
+	inline unsigned int GetDIM() { return DIM; }
+
 //!	Return the total number of equations
 	inline unsigned int GetNEQ() { return NEQ; }
 
@@ -155,5 +164,6 @@ public:
 
 //!	Return pointer to the banded stiffness matrix
 	inline CSkylineMatrix<double>* GetStiffnessMatrix() { return StiffnessMatrix; }
+
 
 };

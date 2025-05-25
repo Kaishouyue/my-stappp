@@ -340,6 +340,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\lee\Desktop\STAPpp-master\src\cpp\Material.cpp" />
     <ClCompile Include="C:\Users\lee\Desktop\STAPpp-master\src\cpp\Node.cpp" />
     <ClCompile Include="C:\Users\lee\Desktop\STAPpp-master\src\cpp\Outputter.cpp" />
+    <ClCompile Include="C:\Users\lee\Desktop\STAPpp-master\src\cpp\Q4.cpp" />
     <ClCompile Include="C:\Users\lee\Desktop\STAPpp-master\src\cpp\Solver.cpp" />
     <ClCompile Include="C:\Users\lee\Desktop\STAPpp-master\src\cpp\main.cpp" />
     <ClInclude Include="C:\Users\lee\Desktop\STAPpp-master\src\h\Bar.h" />
@@ -351,6 +352,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\lee\Desktop\STAPpp-master\src\h\Material.h" />
     <ClInclude Include="C:\Users\lee\Desktop\STAPpp-master\src\h\Node.h" />
     <ClInclude Include="C:\Users\lee\Desktop\STAPpp-master\src\h\Outputter.h" />
+    <ClInclude Include="C:\Users\lee\Desktop\STAPpp-master\src\h\Q4.h" />
     <ClInclude Include="C:\Users\lee\Desktop\STAPpp-master\src\h\SkylineMatrix.h" />
     <ClInclude Include="C:\Users\lee\Desktop\STAPpp-master\src\h\Solver.h" />
   </ItemGroup>

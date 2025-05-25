@@ -100,7 +100,7 @@ void COutputter::OutputNodeInfo()
 		  << "   NUMBER  CONDITION  CODES                     COORDINATES" << endl;
 
 	for (unsigned int np = 0; np < NUMNP; np++)
-		NodeList[np].Write(*this);
+		NodeList[np].Write(*this, FEMData->GetDIM());
 
 	*this << endl;
 }
@@ -161,6 +161,9 @@ void COutputter::OutputElementInfo()
 			case ElementTypes::Bar: // Bar element
 				OutputBarElements(EleGrp);
 				break;
+			case ElementTypes::Q4: // 4Q element
+			    OutputQ4Elements(EleGrp);
+				break;
 		    default:
 		        *this << ElementType << " has not been implemented yet." << endl;
 		        break;
@@ -168,6 +171,7 @@ void COutputter::OutputElementInfo()
 	}
 }
 //	Output bar element data
+
 void COutputter::OutputBarElements(unsigned int EleGrp)
 {
 	CDomain* FEMData = CDomain::GetInstance();
@@ -209,6 +213,52 @@ void COutputter::OutputBarElements(unsigned int EleGrp)
         *this << setw(5) << Ele+1;
 		ElementGroup[Ele].Write(*this);
     }
+
+	*this << endl;
+}
+
+//	Output Q4 element data
+void COutputter::OutputQ4Elements(unsigned int EleGrp)
+{
+	CDomain* FEMData = CDomain::GetInstance();
+
+	CElementGroup& ElementGroup = FEMData->GetEleGrpList()[EleGrp];
+	unsigned int NUMMAT = ElementGroup.GetNUMMAT();
+
+	*this << " M A T E R I A L   D E F I N I T I O N" << endl
+		  << endl;
+	*this << " NUMBER OF DIFFERENT SETS OF MATERIAL" << endl
+		  << " AND THICKNESS  . . . .( NPAR(3) ) . . =" << setw(5) << NUMMAT
+		  << endl
+		  << endl;
+
+	*this << "  SET       YOUNG'S     POISSON'S     THICKNESS" << endl
+		  << " NUMBER     MODULUS        RATIO          T" << endl
+		  << "               E            NU" << endl;
+
+	*this << setiosflags(ios::scientific) << setprecision(5);
+
+	//	Loop over for all property sets
+	for (unsigned int mset = 0; mset < NUMMAT; mset++)
+	{
+		*this << setw(5) << mset+1;
+		ElementGroup.GetMaterial(mset).Write(*this);
+	}
+
+	*this << endl << endl
+		  << " E L E M E N T   I N F O R M A T I O N" << endl;
+	
+	*this << " ELEMENT     NODE     NODE       MATERIAL" << endl
+		  << " NUMBER-N      I        J       SET NUMBER" << endl;
+
+	unsigned int NUME = ElementGroup.GetNUME();
+
+	//	Loop over for all elements in group EleGrp
+	for (unsigned int Ele = 0; Ele < NUME; Ele++)
+	{
+		*this << setw(5) << Ele+1;
+		ElementGroup[Ele].Write(*this);
+	}
 
 	*this << endl;
 }

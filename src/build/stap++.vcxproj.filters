@@ -25,6 +25,9 @@
     <ClCompile Include="C:\Users\lee\Desktop\STAPpp-master\src\cpp\Outputter.cpp">
       <Filter>SOURCE FILES</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\lee\Desktop\STAPpp-master\src\cpp\Q4.cpp">
+      <Filter>SOURCE FILES</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\lee\Desktop\STAPpp-master\src\cpp\Solver.cpp">
       <Filter>SOURCE FILES</Filter>
     </ClCompile>
@@ -58,6 +61,9 @@
       <Filter>HEADER FILES</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\lee\Desktop\STAPpp-master\src\h\Outputter.h">
+      <Filter>HEADER FILES</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\lee\Desktop\STAPpp-master\src\h\Q4.h">
       <Filter>HEADER FILES</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\lee\Desktop\STAPpp-master\src\h\SkylineMatrix.h">
