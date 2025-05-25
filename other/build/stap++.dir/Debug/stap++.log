@@ -1,0 +1,28 @@
+﻿  Bar.cpp
+  Clock.cpp
+C:\Users\lee\Desktop\STAPpp-master\src\h\Element.h(78,24): warning C4018: “<=”: 有符号/无符号不匹配
+  (编译源文件“../src/cpp/Bar.cpp”)
+  
+  Domain.cpp
+C:\Users\lee\Desktop\STAPpp-master\src\h\Element.h(78,24): warning C4018: “<=”: 有符号/无符号不匹配
+  (编译源文件“../src/cpp/Domain.cpp”)
+  
+  ElementGroup.cpp
+C:\Users\lee\Desktop\STAPpp-master\src\h\Element.h(78,24): warning C4018: “<=”: 有符号/无符号不匹配
+  (编译源文件“../src/cpp/ElementGroup.cpp”)
+  
+  LoadCaseData.cpp
+  Material.cpp
+  Node.cpp
+  Outputter.cpp
+C:\Users\lee\Desktop\STAPpp-master\src\h\Element.h(78,24): warning C4018: “<=”: 有符号/无符号不匹配
+  (编译源文件“../src/cpp/Outputter.cpp”)
+  
+C:\Users\lee\Desktop\STAPpp-master\src\cpp\Outputter.cpp(68,13): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Solver.cpp
+  main.cpp
+C:\Users\lee\Desktop\STAPpp-master\src\h\Element.h(78,24): warning C4018: “<=”: 有符号/无符号不匹配
+  (编译源文件“../src/cpp/main.cpp”)
+  
+  正在生成代码...
+  stap++.vcxproj -> C:\Users\lee\Desktop\STAPpp-master\build\Debug\stap++.exe

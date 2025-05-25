@@ -1,0 +1,10 @@
+^C:\USERS\LEE\DESKTOP\STAPPP-MASTER\SRC\CMAKELISTS.TXT
+setlocal
+"D:\Program Files (x86)\cmake-4.0.0-rc1\bin\cmake.exe" -SC:/Users/lee/Desktop/STAPpp-master/src -BC:/Users/lee/Desktop/STAPpp-master/build --check-stamp-file C:/Users/lee/Desktop/STAPpp-master/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
