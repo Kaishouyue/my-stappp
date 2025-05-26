@@ -56,7 +56,7 @@ void CBar::Write(COutputter& output)
 
 //	Calculate element stiffness matrix 
 //	Upper triangular matrix, stored as an array column by colum starting from the diagonal element
-void CBar::ElementStiffness(double* Matrix)
+void CBar::ElementStiffness(double* Matrix, unsigned int Intmode)
 {
 	clear(Matrix, SizeOfStiffnessMatrix());
 

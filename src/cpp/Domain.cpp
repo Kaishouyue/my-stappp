@@ -280,6 +280,7 @@ void CDomain::AssembleStiffnessMatrix()
 	for (unsigned int EleGrp = 0; EleGrp < NUMEG; EleGrp++)
 	{
         CElementGroup& ElementGrp = EleGrpList[EleGrp];
+		unsigned int Intmode= ElementGrp.getIntMode();
         unsigned int NUME = ElementGrp.GetNUME();
 
 		unsigned int size = ElementGrp[0].SizeOfStiffnessMatrix();
@@ -289,7 +290,7 @@ void CDomain::AssembleStiffnessMatrix()
 		for (unsigned int Ele = 0; Ele < NUME; Ele++)
         {
             CElement& Element = ElementGrp[Ele];
-            Element.ElementStiffness(Matrix);
+            Element.ElementStiffness(Matrix,Intmode); // Calculate element stiffness matrix
             StiffnessMatrix->Assembly(Matrix, Element.GetLocationMatrix(), Element.GetND());
         }
 

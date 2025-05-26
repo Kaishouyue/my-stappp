@@ -60,6 +60,9 @@ private:
 
     //! Size of an Material object in this group
     std::size_t MaterialSize_;
+    
+    //! the integral mode of the element group, 0: full integral, 1: reduced integral,
+    unsigned int IntMode = 0 ;
 
 public:
     //! Constructor
@@ -95,4 +98,7 @@ public:
 
     //! Return the number of material/section property setss in this element group
     unsigned int GetNUMMAT() { return NUMMAT_; }
+
+    //! Return the integral mode of the element group
+    inline int getIntMode() const { return IntMode; }
 };

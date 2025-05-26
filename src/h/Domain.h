@@ -46,7 +46,9 @@ private:
 /*!		2 : Plane stress/strain problem
 		3 : 3D problem */
 	unsigned int DIM;
-
+/*!  can use 2D input file，but actually solve it as a 3D problem, 
+      just make the z coordinate of all nodes zero.
+*/
 
 //!	Total number of nodal points
 	unsigned int NUMNP;

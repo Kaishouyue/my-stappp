@@ -118,6 +118,11 @@ bool CElementGroup::Read(ifstream& Input)
 {
     Input >> (int&)ElementType_ >> NUME_ >> NUMMAT_;
     
+    if (ElementType_ == ElementTypes::Q4)
+    {
+    Input >> IntMode;  // Read integral mode for Q4 elements
+    }
+
     CalculateMemberSize();
 
 //  Read material/section property lines
