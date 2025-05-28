@@ -57,6 +57,9 @@
     <ClInclude Include="C:\Users\lee\Desktop\STAPpp-master\src\h\Material.h">
       <Filter>HEADER FILES</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\lee\Desktop\STAPpp-master\src\h\MatrixMultiplication.h">
+      <Filter>HEADER FILES</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Users\lee\Desktop\STAPpp-master\src\h\Node.h">
       <Filter>HEADER FILES</Filter>
     </ClInclude>
