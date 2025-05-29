@@ -1,5 +1,4 @@
-#ifndef MATRIX_MULTIPLICATION_H
-#define MATRIX_MULTIPLICATION_H
+#pragma once
 
 #include <vector>
 #include <stdexcept>
@@ -29,7 +28,7 @@ public:
 
     myMatrix operator*(const myMatrix& other) const {
         if (cols != other.rows)
-            throw std::invalid_argument("矩阵维度不匹配，无法相乘。");
+            throw std::invalid_argument("Matrix dimensions do not match for multiplication.");
 
         myMatrix result(rows, other.cols);
         for (int i = 0; i < rows; ++i)
@@ -42,7 +41,7 @@ public:
 
     myMatrix operator+(const myMatrix& other) const {
         if (rows != other.rows || cols != other.cols)
-            throw std::invalid_argument("矩阵维度不匹配，无法相加。");
+            throw std::invalid_argument("Matrix dimensions do not match for addition.");
 
         myMatrix result(rows, cols);
         for (int i = 0; i < rows; ++i)
@@ -73,4 +72,4 @@ public:
     }
 };
 
-#endif // MATRIX_MULTIPLICATION_H
+

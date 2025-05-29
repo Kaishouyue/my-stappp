@@ -85,6 +85,11 @@ bool CDomain::ReadData(string FileName, string OutFile)
 	Input.getline(Title, 256);
 	Output->OutputHeading();
 
+
+//	Read the control line
+	Input >> NUMNP >> NUMEG >> NLCASE >> MODEX;
+
+
 //	Read the dimension of the problem and element type
 	Input >> DIM ;
 
@@ -93,10 +98,6 @@ bool CDomain::ReadData(string FileName, string OutFile)
 		cerr << "*** Error *** Dimension must be 2 or 3 !" << endl;
 		return false;
 	}
-
-
-//	Read the control line
-	Input >> NUMNP >> NUMEG >> NLCASE >> MODEX;
 
 //	Read nodal point data
 	if (ReadNodalPoints())

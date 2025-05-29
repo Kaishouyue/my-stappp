@@ -23,17 +23,17 @@ events:
       
       The output was:
       0
-      MSBuild version 17.13.19+0d9f5a35a for .NET Framework
-      Build started 2025/5/25 13:44:28.
+      閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.13.19+0d9f5a35a
+      鐢熸垚鍚姩鏃堕棿涓?2025/5/29 18:18:55銆?
       
-      Project "C:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\4.0.0-rc1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\4.0.0-rc1\\CompilerIdC\\CompilerIdC.vcxproj鈥?榛樿鐩爣)銆?
       PrepareForBuild:
-        Creating directory "Debug\\".
-        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-        Creating directory "Debug\\CompilerIdC.tlog\\".
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\鈥濄€?
+        宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\CompilerIdC.tlog\\鈥濄€?
       InitializeBuildStatus:
-        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-        Touching "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        姝ｅ湪鍒涘缓鈥淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
       ClCompile:
         D:\\Program Files (x86)\\Visual Stidio\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
         CMakeCCompilerId.c
@@ -45,15 +45,15 @@ events:
         :VCEnd
         CMAKE_C_COMPILER=D:\\Program Files (x86)\\Visual Stidio\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\cl.exe
       FinalizeBuildStatus:
-        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
-        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
-      Done Building Project "C:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\4.0.0-rc1\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+        姝ｅ湪鍒犻櫎鏂囦欢鈥淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+      宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\4.0.0-rc1\\CompilerIdC\\CompilerIdC.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
       
-      Build succeeded.
-          0 Warning(s)
-          0 Error(s)
+      宸叉垚鍔熺敓鎴愩€?
+          0 涓鍛?
+          0 涓敊璇?
       
-      Time Elapsed 00:00:02.40
+      宸茬敤鏃堕棿 00:00:01.06
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -78,17 +78,17 @@ events:
       
       The output was:
       0
-      MSBuild version 17.13.19+0d9f5a35a for .NET Framework
-      Build started 2025/5/25 13:44:31.
+      閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.13.19+0d9f5a35a
+      鐢熸垚鍚姩鏃堕棿涓?2025/5/29 18:18:56銆?
       
-      Project "C:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\4.0.0-rc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\4.0.0-rc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj鈥?榛樿鐩爣)銆?
       PrepareForBuild:
-        Creating directory "Debug\\".
-        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\鈥濄€?
+        宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\CompilerIdCXX.tlog\\鈥濄€?
       InitializeBuildStatus:
-        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        姝ｅ湪鍒涘缓鈥淒ebug\\CompilerIdCXX.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdCXX.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
       ClCompile:
         D:\\Program Files (x86)\\Visual Stidio\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
         CMakeCXXCompilerId.cpp
@@ -100,15 +100,15 @@ events:
         :VCEnd
         CMAKE_CXX_COMPILER=D:\\Program Files (x86)\\Visual Stidio\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\cl.exe
       FinalizeBuildStatus:
-        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
-        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
-      Done Building Project "C:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\4.0.0-rc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+        姝ｅ湪鍒犻櫎鏂囦欢鈥淒ebug\\CompilerIdCXX.tlog\\unsuccessfulbuild鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+      宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\4.0.0-rc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
       
-      Build succeeded.
-          0 Warning(s)
-          0 Error(s)
+      宸叉垚鍔熺敓鎴愩€?
+          0 涓鍛?
+          0 涓敊璇?
       
-      Time Elapsed 00:00:01.04
+      宸茬敤鏃堕棿 00:00:01.01
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -127,8 +127,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/lee/Desktop/STAPpp-master/src/build/CMakeFiles/CMakeScratch/TryCompile-v0movw"
-      binary: "C:/Users/lee/Desktop/STAPpp-master/src/build/CMakeFiles/CMakeScratch/TryCompile-v0movw"
+      source: "C:/Users/lee/Desktop/STAPpp-master/src/build/CMakeFiles/CMakeScratch/TryCompile-38apz6"
+      binary: "C:/Users/lee/Desktop/STAPpp-master/src/build/CMakeFiles/CMakeScratch/TryCompile-38apz6"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -136,40 +136,40 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/lee/Desktop/STAPpp-master/src/build/CMakeFiles/CMakeScratch/TryCompile-v0movw'
+        Change Dir: 'C:/Users/lee/Desktop/STAPpp-master/src/build/CMakeFiles/CMakeScratch/TryCompile-38apz6'
         
-        Run Build Command(s): "D:/Program Files (x86)/Visual Stidio/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_52666.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
-        Build started 2025/5/25 13:44:32.
+        Run Build Command(s): "D:/Program Files (x86)/Visual Stidio/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_81b2f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.13.19+0d9f5a35a
+        鐢熸垚鍚姩鏃堕棿涓?2025/5/29 18:18:58銆?
         
-        Project "C:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v0movw\\cmTC_52666.vcxproj" on node 1 (default targets).
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-38apz6\\cmTC_81b2f.vcxproj鈥?榛樿鐩爣)銆?
         PrepareForBuild:
-          Creating directory "cmTC_52666.dir\\Debug\\".
-          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v0movw\\Debug\\".
-          Creating directory "cmTC_52666.dir\\Debug\\cmTC_52666.tlog\\".
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_81b2f.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-38apz6\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_81b2f.dir\\Debug\\cmTC_81b2f.tlog\\鈥濄€?
         InitializeBuildStatus:
-          Creating "cmTC_52666.dir\\Debug\\cmTC_52666.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_52666.dir\\Debug\\cmTC_52666.tlog\\unsuccessfulbuild".
+          姝ｅ湪鍒涘缓鈥渃mTC_81b2f.dir\\Debug\\cmTC_81b2f.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_81b2f.dir\\Debug\\cmTC_81b2f.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
         ClCompile:
-          D:\\Program Files (x86)\\Visual Stidio\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_52666.dir\\Debug\\\\" /Fd"cmTC_52666.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Program Files (x86)\\cmake-4.0.0-rc1\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
+          D:\\Program Files (x86)\\Visual Stidio\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_81b2f.dir\\Debug\\\\" /Fd"cmTC_81b2f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Program Files (x86)\\cmake-4.0.0-rc1\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
           鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.43.34810 鐗?
           鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_52666.dir\\Debug\\\\" /Fd"cmTC_52666.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Program Files (x86)\\cmake-4.0.0-rc1\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_81b2f.dir\\Debug\\\\" /Fd"cmTC_81b2f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\Program Files (x86)\\cmake-4.0.0-rc1\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          D:\\Program Files (x86)\\Visual Stidio\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v0movw\\Debug\\cmTC_52666.exe" /INCREMENTAL /ILK:"cmTC_52666.dir\\Debug\\cmTC_52666.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/lee/Desktop/STAPpp-master/src/build/CMakeFiles/CMakeScratch/TryCompile-v0movw/Debug/cmTC_52666.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/lee/Desktop/STAPpp-master/src/build/CMakeFiles/CMakeScratch/TryCompile-v0movw/Debug/cmTC_52666.lib" /MACHINE:X64  /machine:x64 cmTC_52666.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_52666.vcxproj -> C:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v0movw\\Debug\\cmTC_52666.exe
+          D:\\Program Files (x86)\\Visual Stidio\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-38apz6\\Debug\\cmTC_81b2f.exe" /INCREMENTAL /ILK:"cmTC_81b2f.dir\\Debug\\cmTC_81b2f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/lee/Desktop/STAPpp-master/src/build/CMakeFiles/CMakeScratch/TryCompile-38apz6/Debug/cmTC_81b2f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/lee/Desktop/STAPpp-master/src/build/CMakeFiles/CMakeScratch/TryCompile-38apz6/Debug/cmTC_81b2f.lib" /MACHINE:X64  /machine:x64 cmTC_81b2f.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_81b2f.vcxproj -> C:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-38apz6\\Debug\\cmTC_81b2f.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_52666.dir\\Debug\\cmTC_52666.tlog\\unsuccessfulbuild".
-          Touching "cmTC_52666.dir\\Debug\\cmTC_52666.tlog\\cmTC_52666.lastbuildstate".
-        Done Building Project "C:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v0movw\\cmTC_52666.vcxproj" (default targets).
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_81b2f.dir\\Debug\\cmTC_81b2f.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_81b2f.dir\\Debug\\cmTC_81b2f.tlog\\cmTC_81b2f.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-38apz6\\cmTC_81b2f.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
         
-        Build succeeded.
-            0 Warning(s)
-            0 Error(s)
+        宸叉垚鍔熺敓鎴愩€?
+            0 涓鍛?
+            0 涓敊璇?
         
-        Time Elapsed 00:00:00.95
+        宸茬敤鏃堕棿 00:00:01.05
         
       exitCode: 0
   -
@@ -209,8 +209,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/lee/Desktop/STAPpp-master/src/build/CMakeFiles/CMakeScratch/TryCompile-drqx0j"
-      binary: "C:/Users/lee/Desktop/STAPpp-master/src/build/CMakeFiles/CMakeScratch/TryCompile-drqx0j"
+      source: "C:/Users/lee/Desktop/STAPpp-master/src/build/CMakeFiles/CMakeScratch/TryCompile-egb9ql"
+      binary: "C:/Users/lee/Desktop/STAPpp-master/src/build/CMakeFiles/CMakeScratch/TryCompile-egb9ql"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
@@ -219,40 +219,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/lee/Desktop/STAPpp-master/src/build/CMakeFiles/CMakeScratch/TryCompile-drqx0j'
+        Change Dir: 'C:/Users/lee/Desktop/STAPpp-master/src/build/CMakeFiles/CMakeScratch/TryCompile-egb9ql'
         
-        Run Build Command(s): "D:/Program Files (x86)/Visual Stidio/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_42f32.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        MSBuild version 17.13.19+0d9f5a35a for .NET Framework
-        Build started 2025/5/25 13:44:34.
+        Run Build Command(s): "D:/Program Files (x86)/Visual Stidio/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_02350.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.13.19+0d9f5a35a
+        鐢熸垚鍚姩鏃堕棿涓?2025/5/29 18:18:59銆?
         
-        Project "C:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-drqx0j\\cmTC_42f32.vcxproj" on node 1 (default targets).
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-egb9ql\\cmTC_02350.vcxproj鈥?榛樿鐩爣)銆?
         PrepareForBuild:
-          Creating directory "cmTC_42f32.dir\\Debug\\".
-          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-drqx0j\\Debug\\".
-          Creating directory "cmTC_42f32.dir\\Debug\\cmTC_42f32.tlog\\".
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_02350.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-egb9ql\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_02350.dir\\Debug\\cmTC_02350.tlog\\鈥濄€?
         InitializeBuildStatus:
-          Creating "cmTC_42f32.dir\\Debug\\cmTC_42f32.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_42f32.dir\\Debug\\cmTC_42f32.tlog\\unsuccessfulbuild".
+          姝ｅ湪鍒涘缓鈥渃mTC_02350.dir\\Debug\\cmTC_02350.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_02350.dir\\Debug\\cmTC_02350.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
         ClCompile:
-          D:\\Program Files (x86)\\Visual Stidio\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_42f32.dir\\Debug\\\\" /Fd"cmTC_42f32.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\Program Files (x86)\\cmake-4.0.0-rc1\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
+          D:\\Program Files (x86)\\Visual Stidio\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_02350.dir\\Debug\\\\" /Fd"cmTC_02350.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\Program Files (x86)\\cmake-4.0.0-rc1\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
           鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.43.34810 鐗?
           鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_42f32.dir\\Debug\\\\" /Fd"cmTC_42f32.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\Program Files (x86)\\cmake-4.0.0-rc1\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_02350.dir\\Debug\\\\" /Fd"cmTC_02350.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\Program Files (x86)\\cmake-4.0.0-rc1\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          D:\\Program Files (x86)\\Visual Stidio\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-drqx0j\\Debug\\cmTC_42f32.exe" /INCREMENTAL /ILK:"cmTC_42f32.dir\\Debug\\cmTC_42f32.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/lee/Desktop/STAPpp-master/src/build/CMakeFiles/CMakeScratch/TryCompile-drqx0j/Debug/cmTC_42f32.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/lee/Desktop/STAPpp-master/src/build/CMakeFiles/CMakeScratch/TryCompile-drqx0j/Debug/cmTC_42f32.lib" /MACHINE:X64  /machine:x64 cmTC_42f32.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_42f32.vcxproj -> C:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-drqx0j\\Debug\\cmTC_42f32.exe
+          D:\\Program Files (x86)\\Visual Stidio\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-egb9ql\\Debug\\cmTC_02350.exe" /INCREMENTAL /ILK:"cmTC_02350.dir\\Debug\\cmTC_02350.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/lee/Desktop/STAPpp-master/src/build/CMakeFiles/CMakeScratch/TryCompile-egb9ql/Debug/cmTC_02350.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/lee/Desktop/STAPpp-master/src/build/CMakeFiles/CMakeScratch/TryCompile-egb9ql/Debug/cmTC_02350.lib" /MACHINE:X64  /machine:x64 cmTC_02350.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_02350.vcxproj -> C:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-egb9ql\\Debug\\cmTC_02350.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_42f32.dir\\Debug\\cmTC_42f32.tlog\\unsuccessfulbuild".
-          Touching "cmTC_42f32.dir\\Debug\\cmTC_42f32.tlog\\cmTC_42f32.lastbuildstate".
-        Done Building Project "C:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-drqx0j\\cmTC_42f32.vcxproj" (default targets).
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_02350.dir\\Debug\\cmTC_02350.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_02350.dir\\Debug\\cmTC_02350.tlog\\cmTC_02350.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\lee\\Desktop\\STAPpp-master\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-egb9ql\\cmTC_02350.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
         
-        Build succeeded.
-            0 Warning(s)
-            0 Error(s)
+        宸叉垚鍔熺敓鎴愩€?
+            0 涓鍛?
+            0 涓敊璇?
         
-        Time Elapsed 00:00:00.91
+        宸茬敤鏃堕棿 00:00:00.97
         
       exitCode: 0
   -

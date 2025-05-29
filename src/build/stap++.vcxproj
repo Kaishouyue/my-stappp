@@ -342,6 +342,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\lee\Desktop\STAPpp-master\src\cpp\Outputter.cpp" />
     <ClCompile Include="C:\Users\lee\Desktop\STAPpp-master\src\cpp\Q4.cpp" />
     <ClCompile Include="C:\Users\lee\Desktop\STAPpp-master\src\cpp\Solver.cpp" />
+    <ClCompile Include="C:\Users\lee\Desktop\STAPpp-master\src\cpp\gaussIntegral.cpp" />
     <ClCompile Include="C:\Users\lee\Desktop\STAPpp-master\src\cpp\main.cpp" />
     <ClInclude Include="C:\Users\lee\Desktop\STAPpp-master\src\h\Bar.h" />
     <ClInclude Include="C:\Users\lee\Desktop\STAPpp-master\src\h\Clock.h" />
@@ -356,6 +357,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\lee\Desktop\STAPpp-master\src\h\Q4.h" />
     <ClInclude Include="C:\Users\lee\Desktop\STAPpp-master\src\h\SkylineMatrix.h" />
     <ClInclude Include="C:\Users\lee\Desktop\STAPpp-master\src\h\Solver.h" />
+    <ClInclude Include="C:\Users\lee\Desktop\STAPpp-master\src\h\gaussIntegral.h" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

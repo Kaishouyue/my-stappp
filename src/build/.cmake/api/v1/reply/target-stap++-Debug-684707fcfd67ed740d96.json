@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "MinSizeRel/stap++.exe"
+			"path" : "Debug/stap++.exe"
 		},
 		{
-			"path" : "MinSizeRel/stap++.pdb"
+			"path" : "Debug/stap++.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -45,7 +45,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1"
 				}
 			],
 			"includes" : 
@@ -76,7 +76,8 @@
 				7,
 				8,
 				9,
-				10
+				10,
+				11
 			]
 		}
 	],
@@ -92,11 +93,11 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "/machine:x64 /INCREMENTAL:NO",
+				"fragment" : "/machine:x64 /debug /INCREMENTAL",
 				"role" : "flags"
 			},
 			{
@@ -133,14 +134,14 @@
 				7,
 				8,
 				9,
-				10
+				10,
+				11
 			]
 		},
 		{
 			"name" : "HEADER FILES",
 			"sourceIndexes" : 
 			[
-				11,
 				12,
 				13,
 				14,
@@ -152,7 +153,9 @@
 				20,
 				21,
 				22,
-				23
+				23,
+				24,
+				25
 			]
 		}
 	],
@@ -216,6 +219,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "cpp/Solver.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cpp/gaussIntegral.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -287,6 +296,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "h/Solver.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "h/gaussIntegral.h",
 			"sourceGroupIndex" : 1
 		}
 	],

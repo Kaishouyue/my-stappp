@@ -347,7 +347,21 @@ void COutputter::OutputElementStress()
 				*this << endl;
 
 				break;
-
+            case ElementTypes::Q4: // 4Q element
+				*this << "  ELEMENT        simga_xx       simga_yy      sigma_xy" << endl
+				<< "  NUMBER" << endl;
+				
+				double stress_vector[3];
+				for (unsigned int Ele = 0; Ele < NUME; Ele++)
+				{
+					CElement& Element = EleGrp[Ele];
+					Element.ElementStress(stress_vector, Displacement);
+					*this << setw(5) << Ele + 1
+						  << setw(14) << stress_vector[0]
+						  << setw(14) << stress_vector[1]
+						  << setw(14) << stress_vector[2]
+						  << endl;
+				}
 			default: // Invalid element type
 				cerr << "*** Error *** Elment type " << ElementType
 					<< " has not been implemented.\n\n";

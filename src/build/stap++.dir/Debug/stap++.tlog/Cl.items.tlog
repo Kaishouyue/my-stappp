@@ -6,5 +6,7 @@ C:\Users\lee\Desktop\STAPpp-master\src\cpp\LoadCaseData.cpp;C:\Users\lee\Desktop
 C:\Users\lee\Desktop\STAPpp-master\src\cpp\Material.cpp;C:\Users\lee\Desktop\STAPpp-master\src\build\stap++.dir\Debug\Material.obj
 C:\Users\lee\Desktop\STAPpp-master\src\cpp\Node.cpp;C:\Users\lee\Desktop\STAPpp-master\src\build\stap++.dir\Debug\Node.obj
 C:\Users\lee\Desktop\STAPpp-master\src\cpp\Outputter.cpp;C:\Users\lee\Desktop\STAPpp-master\src\build\stap++.dir\Debug\Outputter.obj
+C:\Users\lee\Desktop\STAPpp-master\src\cpp\Q4.cpp;C:\Users\lee\Desktop\STAPpp-master\src\build\stap++.dir\Debug\Q4.obj
 C:\Users\lee\Desktop\STAPpp-master\src\cpp\Solver.cpp;C:\Users\lee\Desktop\STAPpp-master\src\build\stap++.dir\Debug\Solver.obj
+C:\Users\lee\Desktop\STAPpp-master\src\cpp\gaussIntegral.cpp;C:\Users\lee\Desktop\STAPpp-master\src\build\stap++.dir\Debug\gaussIntegral.obj
 C:\Users\lee\Desktop\STAPpp-master\src\cpp\main.cpp;C:\Users\lee\Desktop\STAPpp-master\src\build\stap++.dir\Debug\main.obj
