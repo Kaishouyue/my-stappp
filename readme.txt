@@ -8,3 +8,7 @@ stop where main 69: FEMData->AllocateMatrices();
 2025/5/26
 
 have already finished ElementStiffness, create a new class myMatrix
+
+2025/5/29
+
+finish Q4 element coding 

@@ -148,7 +148,7 @@ void COutputter::OutputElementInfo()
 		*this << " ELEMENT TYPE  . . . . . . . . . . . . .( NPAR(1) ) . . =" << setw(5)
 			  << ElementType << endl;
 		*this << "     EQ.1, TRUSS ELEMENTS" << endl
-			  << "     EQ.2, ELEMENTS CURRENTLY" << endl
+			  << "     EQ.2, Q4 ELEMENTS" << endl
 			  << "     EQ.3, NOT AVAILABLE" << endl
 			  << endl;
 
@@ -201,9 +201,18 @@ void COutputter::OutputBarElements(unsigned int EleGrp)
 
 	*this << endl << endl
 		  << " E L E M E N T   I N F O R M A T I O N" << endl;
-    
-	*this << " ELEMENT     NODE     NODE       MATERIAL" << endl
-		  << " NUMBER-N      I        J       SET NUMBER" << endl;
+    ElementTypes ET = ElementGroup.GetElementType();
+	switch (ET)
+	{
+		case ElementTypes::Bar:
+			*this << " ELEMENT     NODE     NODE       MATERIAL" << endl
+				  << " NUMBER-N      I        J       SET NUMBER" << endl;
+			break;
+		case ElementTypes::Q4:
+		  	*this << " ELEMENT      NODE     NODE     NODE     NODE      MATERIAL" << endl
+				  << " NUMBER-N      I         J        K        L      SET NUMBER" << endl;		
+			break;
+	}	
 
 	unsigned int NUME = ElementGroup.GetNUME();
 
@@ -362,8 +371,9 @@ void COutputter::OutputElementStress()
 						  << setw(14) << stress_vector[2]
 						  << endl;
 				}
+				break;
 			default: // Invalid element type
-				cerr << "*** Error *** Elment type " << ElementType
+				cerr << "*** Error *** Element type " << ElementType
 					<< " has not been implemented.\n\n";
 		}
 	}

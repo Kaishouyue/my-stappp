@@ -34,4 +34,6 @@ public:
 
 //!	Calculate element stress
     virtual void ElementStress(double* stress, double* Displacement);
+
+    virtual void GenerateLocationMatrix();
 };

@@ -78,11 +78,11 @@ void CQ4::ElementStiffness(double* Matrix, unsigned int Intmode)
     }
      //calculate D matrix
         CQ4Material* material_ = dynamic_cast<CQ4Material*>(ElementMaterial_); // Pointer to material of the element
-        D(0,0) = material_->E / (1 - material_->nu * material_->nu);
-        D(0,1) = material_->nu * D(0,0);
+        D(0,0) = material_->E / (1 - material_->nu * material_->nu)* material_->t; // E/(1-nu^2) * t
+        D(0,1) = material_->nu * D(0,0)* material_->t; // nu * E/(1-nu^2) * t
         D(1,0) = D(0,1);
         D(1,1) = D(0,0);   
-        D(2,2) = 0.5 * material_->E / (1 + material_->nu);
+        D(2,2) = 0.5 * material_->E / (1 + material_->nu)* material_->t; // 0.5 * E/(1+nu) * t
 
     // Gauss integration
     if (Intmode == 1) { // 1-point Gauss integration
@@ -99,11 +99,11 @@ void CQ4::ElementStiffness(double* Matrix, unsigned int Intmode)
             K = K + GaussInt4Q4(D, ksi, eta, weight, x, y);
         }
     }
-        for (int j = 0; j < 8; ++j) {
-            for (int i = 0; i <= j; ++i) {
-                Matrix[idx++] = K(i, j);
-            }
-        }   
+    for (int j = 0; j < 8; ++j) {
+        for (int i = j; i >= 0; --i) {
+            Matrix[idx++] = K(i, j);
+        }
+    }  
 }
 
 //    Calculate element stress
@@ -122,16 +122,16 @@ void CQ4::ElementStress(double* stress, double* Displacement)
     }
     myMatrix D(3,3);
     CQ4Material* material_ = dynamic_cast<CQ4Material*>(ElementMaterial_); // Pointer to material of the element
-    D(0,0) = material_->E / (1 - material_->nu * material_->nu);
-    D(0,1) = material_->nu * D(0,0);
+    D(0,0) = material_->E / (1 - material_->nu * material_->nu)* material_->t; // E/(1-nu^2) * t
+    D(0,1) = material_->nu * D(0,0)* material_->t; // nu * E/(1-nu^2) * t
     D(1,0) = D(0,1);
-    D(1,1) = D(0,0);
-    D(2,2) = 0.5 * material_->E / (1 + material_->nu);
+    D(1,1) = D(0,0);   
+    D(2,2) = 0.5 * material_->E / (1 + material_->nu)* material_->t; // 0.5 * E/(1+nu) * t
     myMatrix adJ(2,2);
     myMatrix B(3,8);
     myMatrix G(2,4);
     myMatrix numdaN(2,4);
-    int J_1 = 1;
+    double J_1 = 1;
     //calculate Jacobian matrix
     adJ(1,1) = 0.25 * ((x[1] - x[0])*1 - (x[3] - x[2])*1);
     adJ(1,0) = -0.25 * ((x[3] - x[0])*1 + (x[2] - x[1])*1);
@@ -146,6 +146,7 @@ void CQ4::ElementStress(double* stress, double* Displacement)
         G(1,1) = -1 ;
         G(1,2) = 1 ;
         G(1,3) = 1 ;
+        G = G * 0.25;
         numdaN=(adJ * G) * J_1; // N = J^-1 * G
         //calculate B matrix
         B(0,0) = numdaN(0,0);
@@ -170,3 +171,10 @@ void CQ4::ElementStress(double* stress, double* Displacement)
     stress[2] = stress_vector(2, 0); // sigma_xy
 }
 
+    void CQ4::GenerateLocationMatrix()
+    {
+        unsigned int i = 0;
+        for (unsigned int N = 0; N < NEN_; N++)
+            for (unsigned int D = 0; D < 2; D++)
+                LocationMatrix_[i++] = nodes_[N]->bcode[D];
+    }

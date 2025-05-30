@@ -249,7 +249,7 @@ void CSkylineMatrix<T_>::Assembly(double* Matrix, unsigned int* LocationMatrix, 
         if (!Lj) continue;
         
 //      Address of diagonal element of column j in the one dimensional element stiffness matrix
-        unsigned int DiagjElement = (j+1)*j/2;
+        unsigned int DiagjElement = (j+1)*j/2;        
         
         for (unsigned int i = 0; i <= j; i++)
         {
