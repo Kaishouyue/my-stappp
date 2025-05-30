@@ -27,16 +27,16 @@ public:
     }
 
     myMatrix operator*(const myMatrix& other) const {
-        if (cols != other.rows)
-            throw std::invalid_argument("Matrix dimensions do not match for multiplication.");
+    if (cols != other.rows)
+        throw std::invalid_argument("Matrix dimensions do not match for multiplication.");
 
-        myMatrix result(rows, other.cols);
-        for (int i = 0; i < rows; ++i)
+    myMatrix result(rows, other.cols);
+    for (int i = 0; i < rows; ++i)
+        for (int j = 0; j < other.cols; ++j)
             for (int k = 0; k < cols; ++k)
-                for (int j = 0; j < other.cols; ++j)
-                    result(i,j) += data[i][k] * other.data[k][j];
+                result(i,j) += data[i][k] * other.data[k][j];
 
-        return result;
+    return result;
     }
 
     myMatrix operator+(const myMatrix& other) const {
