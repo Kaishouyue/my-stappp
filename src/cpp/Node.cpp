@@ -46,12 +46,12 @@ void CNode::Write(COutputter& output, unsigned int DIM)
 {
 	if (DIM == 2)
 	{
-		output << setw(9) << NodeNumber << setw(5) << bcode[0] << setw(5) << bcode[1] 
-			   << setw(18) << XYZ[0] << setw(15) << XYZ[1]  << endl;
+		output << setw(5) << NodeNumber << setw(10) << bcode[0] << setw(10) << bcode[1] 
+			   << setw(30) << XYZ[0] << setw(15) << XYZ[1]  << endl;
 	}
 	if (DIM == 3)
 	{		
-	output << setw(9) << NodeNumber << setw(5) << bcode[0] << setw(5) << bcode[1] << setw(5) << bcode[2]
+	output << setw(5) << NodeNumber << setw(5) << bcode[0] << setw(5) << bcode[1] << setw(5) << bcode[2]
 		   << setw(18) << XYZ[0] << setw(15) << XYZ[1] << setw(15) << XYZ[2] << endl;
     }
 }

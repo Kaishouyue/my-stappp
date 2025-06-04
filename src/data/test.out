@@ -1,5 +1,5 @@
 TITLE : Cables to test STAP++
-        (10:54:39 on June 4, 2025, Wednesday)
+        (15:38:24 on June 4, 2025, Wednesday)
 
 C O N T R O L   I N F O R M A T I O N
 
@@ -14,14 +14,14 @@ C O N T R O L   I N F O R M A T I O N
 
     NODE       BOUNDARY                         NODAL POINT
    NUMBER  CONDITION  CODES                     COORDINATES
-        1    1    1       0.00000e+00    0.00000e+00
-        2    0    1       1.00000e+00    0.00000e+00
-        3    0    0       1.00000e+00    1.00000e+00
-        4    0    0       0.00000e+00    1.00000e+00
-        5    0    0       2.50000e-01    2.50000e-01
-        6    0    0       7.50000e-01    2.50000e-01
-        7    0    0       7.50000e-01    7.50000e-01
-        8    0    0       2.50000e-01    7.50000e-01
+    1         1         1                   0.00000e+00    0.00000e+00
+    2         0         1                   1.00000e+00    0.00000e+00
+    3         0         0                   1.00000e+00    1.00000e+00
+    4         0         0                   0.00000e+00    1.00000e+00
+    5         0         0                   2.50000e-01    2.50000e-01
+    6         0         0                   7.50000e-01    2.50000e-01
+    7         0         0                   7.50000e-01    7.50000e-01
+    8         0         0                   2.50000e-01    7.50000e-01
 
  EQUATION NUMBERS
 
@@ -66,7 +66,7 @@ C O N T R O L   I N F O R M A T I O N
   SET       YOUNG'S     POISSON'S     THICKNESS
  NUMBER     MODULUS        RATIO          T
                E            NU
-    1     1.00000e+00     3.00000e-01     1.00000e+00
+    1     1.00000e+02     3.00000e-01     1.00000e+00
 
 
  E L E M E N T   I N F O R M A T I O N
@@ -93,29 +93,29 @@ C O N T R O L   I N F O R M A T I O N
 
   NODE           X-DISPLACEMENT    Y-DISPLACEMENT    Z-DISPLACEMENT
     1               0.00000e+00       0.00000e+00       0.00000e+00
-    2               6.00000e-01       0.00000e+00       0.00000e+00
-    3               6.00000e-01      -2.00000e+00       0.00000e+00
-    4              -7.21645e-16      -2.00000e+00       0.00000e+00
-    5               1.50000e-01      -5.00000e-01       0.00000e+00
-    6               4.50000e-01      -5.00000e-01       0.00000e+00
-    7               4.50000e-01      -1.50000e+00       0.00000e+00
-    8               1.50000e-01      -1.50000e+00       0.00000e+00
+    2               6.00000e-03       0.00000e+00       0.00000e+00
+    3               6.00000e-03      -2.00000e-02       0.00000e+00
+    4               3.12250e-17      -2.00000e-02       0.00000e+00
+    5               1.50000e-03      -5.00000e-03       0.00000e+00
+    6               4.50000e-03      -5.00000e-03       0.00000e+00
+    7               4.50000e-03      -1.50000e-02       0.00000e+00
+    8               1.50000e-03      -1.50000e-02       0.00000e+00
 
  S T R E S S  C A L C U L A T I O N S  F O R  E L E M E N T  G R O U P    1
 
   ELEMENT        simga_xx       simga_yy      sigma_xy
   NUMBER
-    1  -1.22125e-15  -2.00000e+00  -4.27009e-16
-    2   1.11022e-16  -2.00000e+00  -8.54018e-16
-    3  -5.55112e-16  -2.00000e+00  -5.97812e-16
-    4  -6.66134e-16  -2.00000e+00  -5.12411e-16
-    5   0.00000e+00  -2.00000e+00  -5.12411e-16
+    1                  -4.44089e-16                  -2.00000e+00                   5.50441e-16
+    2                   8.88178e-16                  -2.00000e+00                  -2.66881e-16
+    3                  -1.11022e-16                  -2.00000e+00                  -6.00481e-16
+    4                  -5.55112e-16                  -2.00000e+00                   2.66881e-16
+    5                  -1.11022e-16                  -2.00000e+00                  -6.67201e-17
 
  S O L U T I O N   T I M E   L O G   I N   S E C 
 
-     TIME FOR INPUT PHASE = 5.40000e-02
+     TIME FOR INPUT PHASE = 4.70000e-02
      TIME FOR CALCULATION OF STIFFNESS MATRIX = 2.00000e-03
-     TIME FOR FACTORIZATION AND LOAD CASE SOLUTIONS = 2.90000e-02
+     TIME FOR FACTORIZATION AND LOAD CASE SOLUTIONS = 3.20000e-02
 
-     T O T A L   S O L U T I O N   T I M E = 8.50000e-02
+     T O T A L   S O L U T I O N   T I M E = 8.10000e-02
 

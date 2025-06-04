@@ -357,7 +357,7 @@ void COutputter::OutputElementStress()
 
 				break;
             case ElementTypes::Q4: // 4Q element
-				*this << "  ELEMENT        simga_xx       simga_yy      sigma_xy" << endl
+				*this << "  ELEMENT           simga_xx          simga_yy          sigma_xy" << endl
 				<< "  NUMBER" << endl;
 				
 				double stress_vector[3];
@@ -366,9 +366,9 @@ void COutputter::OutputElementStress()
 					CElement& Element = EleGrp[Ele];
 					Element.ElementStress(stress_vector, Displacement);
 					*this << setw(5) << Ele + 1
-						  << setw(14) << stress_vector[0]
-						  << setw(14) << stress_vector[1]
-						  << setw(14) << stress_vector[2]
+						  << setw(15) << stress_vector[0]
+						  << setw(15) << stress_vector[1]
+						  << setw(15) << stress_vector[2]
 						  << endl;
 				}
 				break;
