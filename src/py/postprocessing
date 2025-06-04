@@ -1,0 +1,143 @@
+import re
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+debug = 0  # Debug switch
+
+# Get user input for filename (without path and extension)
+user_file = input("Please enter the filename (without path and extension, e.g. test):")
+filename = fr'c:\Users\lee\Desktop\STAPpp-master\src\data\{user_file}.out'
+# Get user input for scale factor
+scale = float(input("Please enter the scale factor for displacement amplification (e.g. 1, 10, 100): "))
+
+# 1. Read element type
+with open(filename, 'r') as f:
+    lines = f.readlines()
+
+# --- Section location ---
+node_start = elem_start = disp_start = None
+for i, line in enumerate(lines):
+    if 'N O D A L   P O I N T   D A T A' in line:
+        node_start = i+3  # Skip 3 header lines
+    if 'E L E M E N T   I N F O R M A T I O N' in line:
+        elem_start = i+2  # Skip 2 header lines
+    if 'D I S P L A C E M E N T S' in line:
+        disp_start = i+2  # Skip 2 header lines
+    if 'ELEMENT TYPE' in line:
+        m = re.search(r'=\s*(\d+)', line)
+        if m:
+            element_type = int(m.group(1))
+
+if debug == 1:
+    print(f"element_type = {element_type}")
+
+# 2. Read node coordinates
+node_coords = []
+for line in lines[node_start:]:
+    if re.match(r'\s*\d+\s+\d+\s+\d+', line):
+        parts = line.split()
+        x, y, z = map(float, parts[-3:])
+        node_coords.append([x, y, z])
+    elif line.strip() == '':
+        break
+node_coords = np.array(node_coords)
+
+if debug == 1:
+    print("node_coords =")
+    print(node_coords)
+
+# 3. Read element connectivity
+if element_type == 2:
+    elem_connect = []
+    for line in lines[elem_start:]:
+        if re.match(r'\s*\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+', line):
+            parts = line.split()
+            elem_connect.append([int(parts[1]), int(parts[2]), int(parts[3]), int(parts[4])])
+        elif line.strip() == '':
+            break
+elif element_type == 1:
+    elem_connect = []
+    for line in lines[elem_start:]:
+        if re.match(r'\s*\d+\s+\d+\s+\d+\s+\d+', line):
+            parts = line.split()
+            elem_connect.append([int(parts[1]), int(parts[2])])
+        elif line.strip() == '':
+            break
+else:
+    print("Unsupported element type for plotting.")
+    exit(0)
+
+if debug == 1:
+    print("elem_connect =")
+    print(elem_connect)
+
+# 4. Read displacements
+displacements = []
+for line in lines[disp_start:]:
+    if re.match(r'\s*\d+\s+[-\deE.+]+\s+[-\deE.+]+\s+[-\deE.+]+', line):
+        parts = line.split()
+        dx = float(parts[1])
+        dy = float(parts[2])
+        dz = float(parts[3]) if len(parts) > 3 else 0.0
+        displacements.append([dx, dy, dz])
+    elif line.strip() == '':
+        break
+displacements = np.array(displacements)
+
+if debug == 1:
+    print("displacements =")
+    print(displacements)
+
+# 5. Plot
+
+def plot_mesh(node_coords, elem_connect, title, color='b', elem_color='g', node_num_color='k'):
+    for idx, elem in enumerate(elem_connect):
+        pts = node_coords[np.array(elem)-1]
+        pts = np.vstack([pts, pts[0]])
+        plt.plot(pts[:,0], pts[:,1], color+'-')
+    plt.scatter(node_coords[:,0], node_coords[:,1], c=color)
+    for i, (x, y) in enumerate(node_coords):
+        plt.text(x, y, str(i+1), color=node_num_color, fontsize=10)
+    plt.title(title)
+    plt.axis('equal')
+
+def plot_truss_mesh(node_coords, elem_connect, title, color='b', node_num_color='k'):
+    for idx, elem in enumerate(elem_connect):
+        pts = node_coords[np.array(elem)-1]
+        plt.plot(pts[:,0], pts[:,1], color+'-')
+    plt.scatter(node_coords[:,0], node_coords[:,1], c=color)
+    for i, (x, y) in enumerate(node_coords):
+        plt.text(x, y, str(i+1), color=node_num_color, fontsize=10)
+    plt.title(title)
+    plt.axis('equal')
+
+def plot_truss_mesh_3d(node_coords, elem_connect, title, color='b', node_num_color='k'):
+    fig = plt.gcf()
+    ax = fig.add_subplot(111, projection='3d')
+    for elem in elem_connect:
+        pts = node_coords[np.array(elem)-1]
+        ax.plot(pts[:,0], pts[:,1], pts[:,2], color+'-')
+    ax.scatter(node_coords[:,0], node_coords[:,1], node_coords[:,2], c=color)
+    for i, (x, y, z) in enumerate(node_coords):
+        ax.text(x, y, z, str(i+1), color=node_num_color, fontsize=10)
+    ax.set_title(title)
+    ax.set_box_aspect([1,1,1])
+
+if debug != 1:
+    if element_type == 2:
+        plt.figure(figsize=(8,6))
+        plot_mesh(node_coords[:,:2], elem_connect, 'Q4 Element Original Mesh', color='b', elem_color='g', node_num_color='k')
+        plt.show()
+        plt.figure(figsize=(8,6))
+        deformed_coords = node_coords + scale * displacements
+        plot_mesh(deformed_coords[:,:2], elem_connect, f'Q4 Element Deformed Mesh (scale={scale})', color='r', elem_color='m', node_num_color='k')
+        plt.show()
+    elif element_type == 1:
+        plt.figure(figsize=(8,6))
+        plot_truss_mesh_3d(node_coords, elem_connect, 'Truss Element Original Mesh', color='b', node_num_color='k')
+        plt.show()
+        plt.figure(figsize=(8,6))
+        deformed_coords = node_coords + scale * displacements
+        plot_truss_mesh_3d(deformed_coords, elem_connect, f'Truss Element Deformed Mesh (scale={scale})', color='r', node_num_color='k')
+        plt.show()

@@ -6,13 +6,15 @@
     "configurations": [
         
 
+        
+
 
         {
             "name": "(Windows) 启动",
             "type": "cppvsdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/Debug/stap++.exe",
-            "args": ["${workspaceFolder}/data/test.dat"],
+            "args": ["${workspaceFolder}/data/test_truss_22_1.dat"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],

@@ -12,3 +12,7 @@ have already finished ElementStiffness, create a new class myMatrix
 2025/5/29
 
 finish Q4 element coding 
+
+2025/5/30
+
+pass the patch test
