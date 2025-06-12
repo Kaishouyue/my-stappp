@@ -5,6 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         
+        
 
         
 
@@ -16,7 +17,7 @@
             "type": "cppvsdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/Debug/stap++.exe",
-            "args": ["${workspaceFolder}/data/test.dat"],
+            "args": ["${workspaceFolder}/data/test4_8.dat"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],

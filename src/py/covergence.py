@@ -1,7 +1,5 @@
 import re
 import numpy as np
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 import os
 
 debug = 0  # Debug switch
@@ -9,8 +7,7 @@ debug = 0  # Debug switch
 # Get user input for filename (without path and extension)
 user_file = input("Please enter the filename (without path and extension, e.g. test):")
 filename = fr'c:\Users\lee\Desktop\STAPpp-master\src\data\{user_file}.out'
-# Get user input for scale factor
-scale = float(input("Please enter the scale factor for displacement amplification (e.g. 1, 10, 100): "))
+
 
 # 1. Read element type
 with open(filename, 'r') as f:
@@ -136,62 +133,14 @@ if debug == 1:
     print("displacements =")
     print(displacements)
 
-# 5. Plot
-
-def plot_mesh(node_coords, elem_connect, title, color='b', elem_color='g', node_num_color='k'):
-    for idx, elem in enumerate(elem_connect):
-        pts = node_coords[np.array(elem)-1]
-        pts = np.vstack([pts, pts[0]])
-        plt.plot(pts[:,0], pts[:,1], color+'-')
-    plt.scatter(node_coords[:,0], node_coords[:,1], c=color)
-    for i, (x, y) in enumerate(node_coords):
-        plt.text(x, y, str(i+1), color=node_num_color, fontsize=10)
-    plt.title(title)
-    plt.axis('equal')
-
-def plot_truss_mesh(node_coords, elem_connect, title, color='b', node_num_color='k'):
-    for idx, elem in enumerate(elem_connect):
-        pts = node_coords[np.array(elem)-1]
-        plt.plot(pts[:,0], pts[:,1], color+'-')
-    plt.scatter(node_coords[:,0], node_coords[:,1], c=color)
-    for i, (x, y) in enumerate(node_coords):
-        plt.text(x, y, str(i+1), color=node_num_color, fontsize=10)
-    plt.title(title)
-    plt.axis('equal')
-
-def plot_truss_mesh_3d(node_coords, elem_connect, title, color='b', node_num_color='k'):
-    fig = plt.gcf()
-    ax = fig.add_subplot(111, projection='3d')
-    for elem in elem_connect:
-        pts = node_coords[np.array(elem)-1]
-        ax.plot(pts[:,0], pts[:,1], pts[:,2], color+'-')
-    ax.scatter(node_coords[:,0], node_coords[:,1], node_coords[:,2], c=color)
-    for i, (x, y, z) in enumerate(node_coords):
-        ax.text(x, y, z, str(i+1), color=node_num_color, fontsize=10)
-    ax.set_title(title)
-    ax.set_box_aspect([1,1,1])
-
-output_dir = os.path.dirname(__file__)
-img_base = os.path.join(output_dir, f"{user_file}")
-
-if debug != 1:
-    if element_type == 2:
-        plt.figure(figsize=(8,6))
-        plot_mesh(node_coords[:,:2], elem_connect, 'Q4 Element Original Mesh', color='b', elem_color='g', node_num_color='k')
-        plt.savefig(f"{img_base}_original.png", dpi=300)
-        plt.show()
-        plt.figure(figsize=(8,6))
-        deformed_coords = node_coords + scale * displacements
-        plot_mesh(deformed_coords[:,:2], elem_connect, f'Q4 Element Deformed Mesh (scale={scale})', color='r', elem_color='m', node_num_color='k')
-        plt.savefig(f"{img_base}_deformed.png", dpi=300)
-        plt.show()
-    elif element_type == 1:
-        plt.figure(figsize=(8,6))
-        plot_truss_mesh_3d(node_coords, elem_connect, 'Truss Element Original Mesh', color='b', node_num_color='k')
-        plt.savefig(f"{img_base}_original.png", dpi=300)
-        plt.show()
-        plt.figure(figsize=(8,6))
-        deformed_coords = node_coords + scale * displacements
-        plot_truss_mesh_3d(deformed_coords, elem_connect, f'Truss Element Deformed Mesh (scale={scale})', color='r', node_num_color='k')
-        plt.savefig(f"{img_base}_deformed.png", dpi=300)
-        plt.show()
+# 计算L2范数
+if element_type == 2:
+    # Q4单元，二维节点
+    u_exact = 0.12 * node_coords[:,0] * (node_coords[:,1] - 0.5)
+    v_exact = -0.06 * node_coords[:,0]**2
+    u_num = displacements[:,0]
+    v_num = displacements[:,1]
+    for i in range(len(node_coords)):
+        print(f"节点{i+1}: 计算位移(u, v)=({u_num[i]:.6e}, {v_num[i]:.6e}), 精确位移(u, v)=({u_exact[i]:.6e}, {v_exact[i]:.6e})")
+    error = np.sqrt(np.sum((u_num - u_exact)**2 + (v_num - v_exact)**2) / len(node_coords))
+    print(f"L2范数（均方根误差）: {error}")

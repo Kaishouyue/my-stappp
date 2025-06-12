@@ -1,0 +1,109 @@
+TITLE : Cables to test STAP++
+        (19:9:23 on June 8, 2025, Sunday)
+
+C O N T R O L   I N F O R M A T I O N
+
+      NUMBER OF NODAL POINTS . . . . . . . . . . (NUMNP)  =     6
+      NUMBER OF ELEMENT GROUPS . . . . . . . . . (NUMEG)  =     1
+      NUMBER OF LOAD CASES . . . . . . . . . . . (NLCASE) =     1
+      SOLUTION MODE  . . . . . . . . . . . . . . (MODEX)  =     1
+         EQ.0, DATA CHECK
+         EQ.1, EXECUTION
+
+ N O D A L   P O I N T   D A T A
+
+    NODE       BOUNDARY                         NODAL POINT
+   NUMBER  CONDITION  CODES                     COORDINATES
+    1         1         1                   0.00000e+00    0.00000e+00
+    2         0         0                   1.00000e+00    0.00000e+00
+    3         0         0                   2.00000e+00    0.00000e+00
+    4         1         1                   0.00000e+00    1.00000e+00
+    5         0         0                   1.00000e+00    1.00000e+00
+    6         0         0                   2.00000e+00    1.00000e+00
+
+ EQUATION NUMBERS
+
+   NODE NUMBER   DEGREES OF FREEDOM
+        N           X    Y    Z
+        1           0    0    0
+        2           1    2    0
+        3           3    4    0
+        4           0    0    0
+        5           5    6    0
+        6           7    8    0
+
+ L O A D   C A S E   D A T A
+
+     LOAD CASE NUMBER . . . . . . . =     1
+     NUMBER OF CONCENTRATED LOADS . =     2
+
+    NODE       DIRECTION      LOAD
+   NUMBER                   MAGNITUDE
+      6            1        1.00000e+00
+      3            1       -1.00000e+00
+
+ E L E M E N T   G R O U P   D A T A
+
+
+ E L E M E N T   D E F I N I T I O N
+
+ ELEMENT TYPE  . . . . . . . . . . . . .( NPAR(1) ) . . =    2
+     EQ.1, TRUSS ELEMENTS
+     EQ.2, Q4 ELEMENTS
+     EQ.3, NOT AVAILABLE
+
+ NUMBER OF ELEMENTS. . . . . . . . . . .( NPAR(2) ) . . =    2
+
+ M A T E R I A L   D E F I N I T I O N
+
+ NUMBER OF DIFFERENT SETS OF MATERIAL
+ AND THICKNESS  . . . .( NPAR(3) ) . . =    1
+
+  SET       YOUNG'S     POISSON'S     THICKNESS
+ NUMBER     MODULUS        RATIO          T
+               E            NU
+    1     1.00000e+02     3.00000e-01     1.00000e+00
+
+
+ E L E M E N T   I N F O R M A T I O N
+ ELEMENT     NODE     NODE       MATERIAL
+ NUMBER-N      I        J       SET NUMBER
+    1          1        2        5        4           1
+    2          2        3        6        5           1
+
+	TOTAL SYSTEM DATA
+
+     NUMBER OF EQUATIONS . . . . . . . . . . . . . .(NEQ) = 8
+     NUMBER OF MATRIX ELEMENTS . . . . . . . . . . .(NWK) = 36
+     MAXIMUM HALF BANDWIDTH  . . . . . . . . . . . .(MK ) = 8
+     MEAN HALF BANDWIDTH . . . . . . . . . . . . . .(MM ) = 4
+
+
+ LOAD CASE    1
+
+
+ D I S P L A C E M E N T S
+
+  NODE           X-DISPLACEMENT    Y-DISPLACEMENT    Z-DISPLACEMENT
+    1               0.00000e+00       0.00000e+00       0.00000e+00
+    2              -4.04444e-02      -4.04444e-02       0.00000e+00
+    3              -8.08889e-02      -1.61778e-01       0.00000e+00
+    4               0.00000e+00       0.00000e+00       0.00000e+00
+    5               4.04444e-02      -4.04444e-02       0.00000e+00
+    6               8.08889e-02      -1.61778e-01       0.00000e+00
+
+ S T R E S S  C A L C U L A T I O N S  F O R  E L E M E N T  G R O U P    1
+
+  ELEMENT        simga_xx       simga_yy      sigma_xy
+  NUMBER
+    1                   4.95635e-16                   4.95635e-16                   5.33761e-16
+    2                   1.02940e-15                  -3.81258e-17                   1.33440e-16
+
+ S O L U T I O N   T I M E   L O G   I N   S E C 
+
+     TIME FOR INPUT PHASE = 5.50000e-02
+     TIME FOR CALCULATION OF STIFFNESS MATRIX = 4.00000e-03
+     TIME FOR FACTORIZATION AND LOAD CASE SOLUTIONS = 2.00000e-02
+
+     T O T A L   S O L U T I O N   T I M E = 7.90000e-02
+

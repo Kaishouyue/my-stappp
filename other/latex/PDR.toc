@@ -1,0 +1,23 @@
+\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Main Functions}{2}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}element types}{2}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Other Functions}{2}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Algorithm Description}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Basic Procedure}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Instructions for Use}{4}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Input File Format}{4}{section.3.1}%
+\contentsline {paragraph}{Header Line}{4}{section*.2}%
+\contentsline {paragraph}{Control Line}{4}{section*.3}%
+\contentsline {paragraph}{Node Data}{4}{section*.4}%
+\contentsline {paragraph}{Load Data (total of \texttt {NLGASE} cases)}{4}{section*.5}%
+\contentsline {paragraph}{Element Group Data (total of \texttt {NUMEG} groups)}{5}{section*.6}%
+\contentsline {subsection}{\numberline {3.1.1}Visualization of results}{6}{subsection.3.1.1}%
+\contentsline {chapter}{\numberline {4}Verification of Computational Accuracy}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}patch test}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}input file}{7}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}output file}{8}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}verification}{9}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Convergence test}{10}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}geometry}{10}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Visualization of results}{10}{subsection.4.2.2}%
+\contentsline {chapter}{\numberline {5}Conclusion}{14}{chapter.5}%
